@@ -1,6 +1,7 @@
 import { Container } from "./styles";
 
-import profileImage from "../../assets/profile-image.jpg"
+// import profileImage from "../../assets/profile-image.jpg";
+import profileImage from "../../assets/v-profile-image.jpg";
 import cssIcon from "../../assets/css-icon.svg";
 import htmlIcon from "../../assets/html-icon.svg";
 import jsIcon from "../../assets/js-icon.svg";
@@ -16,22 +17,22 @@ export function About(){
     <Container id="sobre">
       <div className="about-text">
         <ScrollAnimation animateIn="fadeInLeft">
-          <h2>Sobre mim</h2>
+          <h2>About me</h2>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000}>
-          <p>Me chamo João Túlio, sou técnico em informática com uma grande paixão por programação. Sou apaixonado por entregar soluções que agregam na vida das pessoas e ao mesmo tempo me desafiam. Aprimorei minhas habilidades como desenvolvedor Front-End e Back-End</p>
+          <p>My name is Vivek Suryawanshi, I'm a computer technician with a great passion for programming. I am passionate about delivering solutions that add to people's lives and at the same time challenge me. Improved my skills as a Front-End and Back-End developer</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000} style={{marginTop: "2rem", marginBottom: "2rem"}}>
 
-          <p>Desenvolvo sites e aplicações utilizando HTML, CSS, e JavaScript. Tenho familiaridade em desenvolver layouts que me fornecem. Estou sempre me aprimorando a cada projeto que colocam em minhas mãos.</p>
+          <p>I develop websites and applications using HTML, CSS, and JavaScript. I am familiar with developing layouts that they provide me. I'm always improving myself with each project I get my hands on.</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.6 * 1000}>
 
-          <p>Sou uma pessoa dedicada que corre atrás para realizar seus sonhos, trabalhador e orientado a resultados, sempre busco alcançar minha melhor versão.</p>
+          <p>I am a dedicated person who pursues his dreams, hardworking and results oriented, I always seek to achieve my best version.</p>
         </ScrollAnimation>
 
         <ScrollAnimation animateIn="fadeInLeft" delay={0.7 * 1000}>
-          <h3>Aqui estão as minhas principais habilidades:</h3>
+          <h3>Here are my main skills:</h3>
         </ScrollAnimation>
         <div className="hard-skills">
 
@@ -81,7 +82,7 @@ export function About(){
       </div>
       <div className="about-image">
         <ScrollAnimation animateIn="fadeInRight" delay={0.6 * 1000}>
-          <img src="https://portfolio-joaotulio.vercel.app/img/foto_antiga.jpg" alt="Imagem de perfil" />
+          <img src={profileImage} alt="Imagem de perfil" />
         </ScrollAnimation>
       </div>
     </Container>
